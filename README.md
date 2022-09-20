@@ -1,7 +1,7 @@
 # 🍃 MONGODB
 
-## Comandos Basicos
-### Mostrar todas las bases de datos 👀
+## 📋 Comandos Basicos
+### Mostrar todas las bases de datos
 Hay dos maneras
 ```bash
 show dbs
@@ -10,7 +10,7 @@ show dbs
 show databases
 ```
 
-### Ver la base de datos actual 👁
+### Ver la base de datos actual
 ```bash
 db
 ```
@@ -22,9 +22,9 @@ show collections
 ```
 
 
-## Crear
+## 🔧 Crear
 
-### Crear una base de datos 🔧
+### Crear una base de datos 
 ```bash
 use nombreBaseDatos
 ```
@@ -46,7 +46,7 @@ db.users.insertMany([
 ])
 ```
 
-## Eliminar
+## ❌ Eliminar
 ### Eliminar base de datos actual
 
 ```bash
