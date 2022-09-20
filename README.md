@@ -3,6 +3,8 @@
 ## Mostrar todas las bases de datos
 ```bash
 show dbs
+```
+```bash
 show databases
 ```
 
