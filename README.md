@@ -1,6 +1,7 @@
 # 🍃 MongoDB 
-
-## Mostrar todas las bases de datos
+## Comandos Basicos
+### Mostrar todas las bases de datos
+Hay dos maneras
 ```bash
 show dbs
 ```
@@ -8,7 +9,7 @@ show dbs
 show databases
 ```
 
-## Ver la base de datos actual 
+### Ver la base de datos actual 
 ```bash
 db
 ```
@@ -27,7 +28,8 @@ show collections
 
 ## Insertar un dato
 ```bash
-db.users.insert({ 'username': 'user2', 'age': 30, 'email': 'use2@example.com' })
+db.users.insertOne({ 'username': 'user2', 'age': 30, 'email': 'use2@example.com' })
+db.users.insertOne({ username: 'user3', age: 23, email: 'user3@gmail.com' })
 ```
 
 ## Eliminar base de datos actual
