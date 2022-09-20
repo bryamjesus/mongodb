@@ -1,6 +1,7 @@
-# 🍃 MongoDB 
+# 🍃 MONGODB
+
 ## Comandos Basicos
-### Mostrar todas las bases de datos
+### Mostrar todas las bases de datos 👀
 Hay dos maneras
 ```bash
 show dbs
@@ -9,30 +10,44 @@ show dbs
 show databases
 ```
 
-### Ver la base de datos actual 
+### Ver la base de datos actual 👁
 ```bash
 db
 ```
 
-## Crear una base de datos
-```bash
-use nombreBaseDatos
-```
-> Pero no lo crea hasta que insertemos aun que sea minimo un dato
-
-## Ver las colleciones
+### Ver las colleciones
 Son como las tablas en una base de datos relaciones, lo cual estos almacenan documentos (objetos JSON)
 ```bash
 show collections
 ```
 
-## Insertar un dato
+
+## Crear
+
+### Crear una base de datos 🔧
 ```bash
-db.users.insertOne({ 'username': 'user2', 'age': 30, 'email': 'use2@example.com' })
+use nombreBaseDatos
+```
+> Pero no lo crea hasta que insertemos aun que sea minimo un dato
+
+### Insertar un dato
+Con ``insertOne`` podremos ingresar un dato
+```bash
 db.users.insertOne({ username: 'user3', age: 23, email: 'user3@gmail.com' })
 ```
+> El ``insert`` ya esta en desuso
 
-## Eliminar base de datos actual
+El ``insertMany`` ayuda a ingresar mas de un dato
+```bash
+db.users.insertMany([
+  { username: 'user4', age: 50, email: 'user4@gmail.com' },
+  { username: 'user5', age: 70, email: 'user5@gmail.com' },
+  { username: 'user6', age: 34, email: 'user6@gmail.com' },
+])
+```
+
+## Eliminar
+### Eliminar base de datos actual
 
 ```bash
 db.dropDatabase()
