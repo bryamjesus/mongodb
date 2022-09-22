@@ -16,7 +16,7 @@ db
 ```
 
 ### Seleccionar la base de datos
-Aca podemos seleccionar una base que viene con mongo o si es que no existe la base de datos, lo que hace mongo es 'crearla' pero ojo si ingresa ``show dbs`` no saldra hasta ingresarle un datos. El comando consta de la palabra ``use`` seguido del nombre de la base de datos.
+Aca podemos seleccionar una base que viene con mongo o si es que no existe la base de datos, lo que hace mongo es 'crearla' pero ojo si ingresa ``show dbs`` no saldra hasta ingresarle un dato. El comando consta de la palabra ``use`` seguido del nombre de la base de datos.
 
 ```bash
 use mongo
@@ -28,7 +28,7 @@ Son como las tablas en una base de datos relaciones, lo cual estos almacenan doc
 show collections
 ```
 
-## 🔧 Crear
+## 🔧 Insertar
 ### Insertar un dato
 Con ``insertOne`` podremos ingresar un dato
 ```bash
@@ -78,14 +78,14 @@ Con este comando puedes ver todos los registros que hay en esa ``collection``
 ```bash
 db.users.find()
 ```
-### Where
+### Filtros
 Para buscar utilizaremos el ``findOne``  y lo que pondremos un campo o los campos que lo caractericen
 ```bash
  db.mongo.find({nombre:'Homero'})
 ```
 > Puedes poner más campos solo los separas con coma
 
-Con el ``$gt`` (greater than) le decimos que nos traiga todos los que su edad se mayor a 30
+Con el ``$gt`` le decimos que nos traiga todos los que su edad se mayor a 30
 ```bash
  db.mongo.find({edad: {$gt: 30}})
 ```
@@ -93,6 +93,13 @@ Si solo quieres traer solo un resultado puedes poner ``findOne``
 ```bash
  db.mongo.findOne({edad: {$gt: 30}})
 ```
+Los operadores relaciones son <br>
+| Nombre | Significado |
+|-|-|
+| $gt | greater than|
+| $gte | greater than equal |
+| $lt | less than |
+| $lte | less than equal|
 
 
 ## ✏ Editar
