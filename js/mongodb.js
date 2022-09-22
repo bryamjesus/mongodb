@@ -1,22 +1,23 @@
 // Crear un documento
 // Documentos -> Objetos de tipo JSON
-user2 = {
-  'username': 'user2',
-  'age': 30,
-  'email': 'use2@example.com'
-}
-db.users.insertOne({ username: 'user3', age: 23, email: 'user3@gmail.com' })
+db.mongo.insertOne({ nombre: 'Jesus', correo: 'bryam@mongo.com', edad: 40, estatus: 'A' })
+
+user2 = { nombre: 'Jesus', correo: 'bryam@mongo.com', edad: 40, estatus: 'A' }
 
 users = [
-  { username: 'user4', age: 50, email: 'user4@gmail.com' },
-  { username: 'user5', age: 70, email: 'user5@gmail.com' },
-  { username: 'user6', age: 34, email: 'user6@gmail.com' },
-
+  { nombre: 'Homero', correo: 'homero@mongo.com', edad: 42, estatus: 'I' },
+  { nombre: 'Maggie', correo: 'maggie@mongo.com', edad: 27, estatus: 'A' },
+  { nombre: 'Juan', correo: 'juan@mongo.com', edad: 17, estatus: 'I' },
+  { nombre: 'Luana', correo: 'luana@mongo.com', edad: 39, estatus: 'A' },
+  { nombre: 'Bart', correo: 'bart@mongo.com', edad: 10, estatus: 'I' },
+  { nombre: 'Nelson', correo: 'nelson@mongo.com', edad: 28, estatus: 'I' },
+  { nombre: 'Bojack', correo: 'bojack@mongo.com', edad: 59, estatus: 'I' },
+  { nombre: 'Dayane', correo: 'dayane@mongo.com', edad: 35, estatus: 'A' },
 ]
 db.users.insertMany([
-  { username: 'user4', age: 50, email: 'user4@gmail.com' },
-  { username: 'user5', age: 70, email: 'user5@gmail.com' },
-  { username: 'user6', age: 34, email: 'user6@gmail.com' },
+  { nombre: 'Tod', correo: 'tod@mongo.com', edad: 23, estatus: 'A' },
+  { nombre: 'Maria', correo: 'maria@mongo.com', edad: 12, estatus: 'A' },
+  { nombre: 'Pepe', correo: 'pepe@mongo.com', edad: 53, estatus: 'I' },
 ])
 
 
