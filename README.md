@@ -108,7 +108,7 @@ Ahora contar la cantidad de resultados
 ```
 > Nos devuelve la cantidad de usuarios menor a 30
 
-Mas filtros de un filtro
+#### Mas filtros de un filtro
 ```bash
 db.mongo.find({
   $and:[
