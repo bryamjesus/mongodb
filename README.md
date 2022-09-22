@@ -1,6 +1,6 @@
 # 🍃 MONGODB
 
-## 📋 Comandos Basicos
+## 👀 Ver
 ### Mostrar todas las bases de datos
 Hay dos maneras
 ```bash
@@ -19,6 +19,12 @@ db
 Son como las tablas en una base de datos relaciones, lo cual estos almacenan documentos (objetos JSON)
 ```bash
 show collections
+```
+
+### Ver todos los registros 
+Con este comando puedes ver todos los registros que hay en esa ``collection``
+```bash
+db.users.find()
 ```
 
 
@@ -46,9 +52,13 @@ db.users.insertMany([
 ])
 ```
 
+## ✏ Editar
+
+
+
 ## ❌ Eliminar
 ### Eliminar base de datos actual
-
+Elimina la base de datos en la cual nos encontramos
 ```bash
 db.dropDatabase()
 ```
