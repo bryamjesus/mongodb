@@ -157,7 +157,7 @@ db.collection.update({
 })
 ```
 
-### Ejemplo
+### Editar y agregar
 ```bash
 db.mongo.updateOne(
   {nombre: 'Bart'},
@@ -170,7 +170,19 @@ db.mongo.updateOne(
   }
 )
 ```
-> Si el campo no existe lo agrega
+> Si el atributo no existe lo agrega
+
+### Eliminar un atributo
+```bash
+db.mongo.updateOne(
+  {nombre: 'Nelson'},
+  {
+    $unset:{
+      edad: true
+    }
+  }
+)
+```
 
 ## ❌ Eliminar
 ### Eliminar base de datos actual
