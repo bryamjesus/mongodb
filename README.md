@@ -108,7 +108,7 @@ Ahora contar la cantidad de resultados
 ```
 > Nos devuelve la cantidad de usuarios menor a 30
 
-Mas filtros
+Mas filtros de un filtro
 ```bash
 db.mongo.find({
   $and:[
@@ -117,12 +117,36 @@ db.mongo.find({
   ]
 })
 ```
-
-Que no sea
+#### Operador not
 ```bash
 db.mongo.find({edad: {$ne: 17}})
 ```
 
+#### Operador in
+```bash
+db.mongo.find({
+  edad: {$in: [10,28,39 ] }
+})
+```
+
+#### Filtrar si tienen un campo
+```bash
+db.mongo.find({
+  campo: {$exists: true}
+})
+```
+
+#### Ordenar
+
+```bash
+db.mongo.find().sort({edad : 1}).limit(3)
+```
+> El ``-1`` es de forma descendente
+
+#### Expresiones regulars
+```bash
+db.mongo.find({nombre: /ar/})
+```
 
 ## ✏ Editar
 
