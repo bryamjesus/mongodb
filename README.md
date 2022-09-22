@@ -184,6 +184,17 @@ db.mongo.updateOne(
 )
 ```
 
+### Editar varios
+```bash
+db.mongo.updateMany(
+  { correo: { $exists: true }},
+  {
+    $set: {
+      biografia: 'Añadir biografia'
+    }
+  }
+)
+```
 ## ❌ Eliminar
 ### Eliminar base de datos actual
 Elimina la base de datos en la cual nos encontramos
