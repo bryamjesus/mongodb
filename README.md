@@ -95,12 +95,12 @@ Si solo quieres traer solo un resultado puedes poner ``findOne``
 ```
 Los operadores relaciones son <br>
 | Nombre | Significado        | valor |
-| ------ | ------------------ | - |
-| $gt    | greater than       | > |
-| $gte   | greater than equal | >= |
-| $lt    | less than          | < |
-| $lte   | less than equal    | <= |
-| $ne  | no equeals    | != |
+| ------ | ------------------ | ----- |
+| $gt    | greater than       | >     |
+| $gte   | greater than equal | >=    |
+| $lt    | less than          | <     |
+| $lte   | less than equal    | <=    |
+| $ne    | no equeals         | !=    |
 
 Ahora contar la cantidad de resultados
 ```bash
@@ -191,6 +191,37 @@ db.mongo.updateMany(
   {
     $set: {
       biografia: 'Añadir biografia'
+    }
+  }
+)
+
+db.mongo.updateMany(
+  {},
+  {
+    $inc: {
+      edad: 1
+    }
+  }
+)
+```
+
+```bash
+db.mongo.updateMany(
+  {},
+  {
+    $inc: {
+      edad: 1
+    }
+  }
+)
+```
+
+```bash
+db.mongo.updateMany(
+  {edad : {$gt: 18}},
+  {
+    $set: {
+      licencia: true,
     }
   }
 )
