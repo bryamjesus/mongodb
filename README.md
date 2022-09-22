@@ -45,7 +45,7 @@ db.users.insertMany([
 ])
 ```
 
-Para insertar varios puedes ingresar el siguiente codigo en la terminal
+Para insertar varios, también puedes ingresar el siguiente codigo en la terminal
 ```js
 users = [
   { nombre: 'Homero', correo: 'homero@mongo.com', edad: 42, estatus: 'I' },
@@ -149,7 +149,28 @@ db.mongo.find({nombre: /ar/})
 ```
 
 ## ✏ Editar
+Veamos la estructura
+```bash
+db.collection.update({
+  <condiciones>,
+  <datos de actualización>
+})
+```
 
+### Ejemplo
+```bash
+db.mongo.updateOne(
+  {nombre: 'Bart'},
+  {
+    $set:{
+      edad: 11,
+      estatus: 'A',
+      foto: 'https://assets.stickpng.com/images/5eb95c8017f3c600044a2910.png'
+    }
+  }
+)
+```
+> Si el campo no existe lo agrega
 
 ## ❌ Eliminar
 ### Eliminar base de datos actual
