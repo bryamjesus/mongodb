@@ -94,13 +94,13 @@ Si solo quieres traer solo un resultado puedes poner ``findOne``
  db.mongo.findOne({edad: {$gt: 30}})
 ```
 Los operadores relaciones son <br>
-| Nombre | Significado        |
-| ------ | ------------------ |
-| $gt    | greater than       |
-| $gte   | greater than equal |
-| $lt    | less than          |
-| $lte   | less than equal    |
-| $ne  | no equeals    |
+| Nombre | Significado        | valor |
+| ------ | ------------------ | - |
+| $gt    | greater than       | > |
+| $gte   | greater than equal | >= |
+| $lt    | less than          | < |
+| $lte   | less than equal    | <= |
+| $ne  | no equeals    | != |
 
 Ahora contar la cantidad de resultados
 ```bash
@@ -119,10 +119,11 @@ db.mongo.find({
 ```
 
 Que no sea
-db.mongo.find({edad: {$gt: 30}})
 ```bash
-db.mongo.find({edad: {$ne: 30}})
+db.mongo.find({edad: {$ne: 17}})
 ```
+
+
 ## ✏ Editar
 
 
