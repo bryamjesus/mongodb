@@ -10,6 +10,7 @@ empleados = [
   { nombres: 'Marta', departamentos: 'Logística', sueldo: 2700 },
   { nombres: 'Carlos', departamentos: 'Sistemas', sueldo: 3000 },
 ]
+
 db.insertMany(empleados)
 
 
