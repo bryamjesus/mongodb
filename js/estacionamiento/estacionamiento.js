@@ -1,7 +1,7 @@
 // EJERCICIOS
 
 // Listar los vehículos del usuario de apellidos “Salas Valverde”
-db.propietarios.find({ apellidos: 'Salas Valverde' }, { vehiculos: 1 })
+db.propietarios.find({ apellidos: 'Salas Valverde' }, { _id: false, vehiculos: 1 })
 
 
 // Listar los nombres, apellidos y el 
@@ -28,9 +28,9 @@ db.registro.find()
 db.propietarios.find({ 'vehiculos.marca': 'Toyota' }, { _id: false, nombres: true, apellidos: true })
 
 
-// Listar  los nombres, apellidos, departamento de propietarios, 
-// así como los números de placa, marca y color de sus vehículos, 
+// Listar  los nombres, apellidos, departamento de propietarios,
+// así como los números de placa, marca y color de sus vehículos,
 // pero únicamente de los propietarios de sexo Femenino
+db.propietarios.find({ sexo: 'F' }, { _id: false, nombres: true, apellidos: true, departamento: true,'vehiculos.placa': true,'vehiculos.marca': true,'vehiculos.color': true});
 
-
-
+// 

@@ -40,7 +40,9 @@ db.propietarios.insert(
       telefono: '455050',
       celular: '959565678',
       estado: 'A',
-      vehiculos: [{ placa: 'F9M-456', marca: 'Peugeot', color: 'Negro', estado: 'A' }]
+      vehiculos: [
+        { placa: 'F9M-456', marca: 'Peugeot', color: 'Negro', estado: 'A' }
+      ]
     },
     {
       _id: 4,
