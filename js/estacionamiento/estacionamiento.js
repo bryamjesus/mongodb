@@ -20,3 +20,17 @@ db.propietarios.find({}, { _id: false, nombres: true, apellidos: true, departame
 
 
 // Listar los documentos contenidos en la colección registro
+db.registro.find()
+
+
+// Listar  los nombres y apellidos de propietarios que tienen 
+// vehículos de marca “Toyota”
+db.propietarios.find({ 'vehiculos.marca': 'Toyota' }, { _id: false, nombres: true, apellidos: true })
+
+
+// Listar  los nombres, apellidos, departamento de propietarios, 
+// así como los números de placa, marca y color de sus vehículos, 
+// pero únicamente de los propietarios de sexo Femenino
+
+
+

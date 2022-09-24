@@ -32,17 +32,42 @@ db.propietarios.insert(
       ]
     },
     {
-      _id: 3, nombres: 'Pedro', apellidos: 'Campos Fernandez', sexo: 'M', departamento: '103', telefono: '455050', celular: '959565678', estado: 'A',
+      _id: 3,
+      nombres: 'Pedro',
+      apellidos: 'Campos Fernandez',
+      sexo: 'M',
+      departamento: '103',
+      telefono: '455050',
+      celular: '959565678',
+      estado: 'A',
       vehiculos: [{ placa: 'F9M-456', marca: 'Peugeot', color: 'Negro', estado: 'A' }]
     },
     {
-      _id: 4, nombres: 'Maria', apellidos: 'Torreblanca Gallegos', sexo: 'F', departamento: '104', telefono: '445656', celular: '954455660', estado: 'A',
-      vehiculos: [{ placa: 'J9Y-567', marca: 'Nissan', color: 'Verde', estado: 'A' },
-      { placa: 'U7E-567', marca: 'KIA', color: 'Rosado', estado: 'A' }]
+      _id: 4,
+      nombres: 'Maria',
+      apellidos: 'Torreblanca Gallegos',
+      sexo: 'F',
+      departamento: '104',
+      telefono: '445656',
+      celular: '954455660',
+      estado: 'A',
+      vehiculos: [
+        { placa: 'J9Y-567', marca: 'Nissan', color: 'Verde', estado: 'A' },
+        { placa: 'U7E-567', marca: 'KIA', color: 'Rosado', estado: 'A' }
+      ]
     },
     {
-      _id: 5, nombres: 'Marco', apellidos: 'Zeballos Lazarte', sexo: 'M', departamento: '105', telefono: '288778', celular: '951234567', estado: 'A',
-      vehiculos: [{ placa: 'T6Y-678', marca: 'Toyota', color: 'Beige', estado: 'A' }]
+      _id: 5,
+      nombres: 'Marco',
+      apellidos: 'Zeballos Lazarte',
+      sexo: 'M',
+      departamento: '105',
+      telefono: '288778',
+      celular: '951234567',
+      estado: 'A',
+      vehiculos: [
+        { placa: 'T6Y-678', marca: 'Toyota', color: 'Beige', estado: 'A' }
+      ]
     },
   ]);
 
