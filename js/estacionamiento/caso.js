@@ -7,7 +7,8 @@ db.propietarios.insert(
       _id: 1,
       nombres: 'Juan',
       apellidos: 'Salas Valverde',
-      sexo: 'M', departamento: '101',
+      sexo: 'M',
+      departamento: '101',
       telefono: '232425',
       celular: '959988770',
       estado: 'A',
@@ -16,10 +17,19 @@ db.propietarios.insert(
         { placa: 'B5H-345', marca: 'Toyota', color: 'Blanco', estado: 'A' }]
     },
     {
-      _id: 2, nombres: 'Ana', apellidos: 'Diaz Quequezana', sexo: 'F', departamento: '102', telefono: '256565', celular: '950099887', estado: 'A',
-      vehiculos: [{ placa: 'C3P-123', marca: 'Nissan', color: 'Rojo', estado: 'A' },
-      { placa: 'D4T-123', marca: 'Toyota', color: 'Blanco', estado: 'A' },
-      { placa: 'E5H-123', marca: 'Chevrolet', color: 'Gris', estado: 'A' }]
+      _id: 2,
+      nombres: 'Ana',
+      apellidos: 'Diaz Quequezana',
+      sexo: 'F',
+      departamento: '102',
+      telefono: '256565',
+      celular: '950099887',
+      estado: 'A',
+      vehiculos: [
+        { placa: 'C3P-123', marca: 'Nissan', color: 'Rojo', estado: 'A' },
+        { placa: 'D4T-123', marca: 'Toyota', color: 'Blanco', estado: 'A' },
+        { placa: 'E5H-123', marca: 'Chevrolet', color: 'Gris', estado: 'A' }
+      ]
     },
     {
       _id: 3, nombres: 'Pedro', apellidos: 'Campos Fernandez', sexo: 'M', departamento: '103', telefono: '455050', celular: '959565678', estado: 'A',
