@@ -1,11 +1,20 @@
 # EJERCICIO
-Descargar los [DEV TOOLS](https://www.mongodb.com/try/download/database-tools?tck=docs_databasetools) de mongo (.zip). Al descomprimir copiar todo el contenido de la carpeta **bin** y lo ingresa en el **bin** de la 
+Descargar los [DEV TOOLS](https://www.mongodb.com/try/download/database-tools?tck=docs_databasetools) de mongo (.zip). Al descomprimir copiar todo el contenido de la carpeta **bin** y lo ingresa en el **bin** de MONGODB, prodeciendo a pegar.
+<br>
+Abrir cmd e ingresar 
+```bash
+mongod
+```
+Abrir otro cmd, ingresar
 ```bash
 mongoimport --db zips --collection zips < zips.json
 ```
+o
 ```bash
 mongoimport -d zips -c zips --file zips.json
 ```
+> **zips.json** es donde se encuentra el archivo si este no esta en el ``bin`` poner ruta de donde se encuentra
+
 ## Problemas
 Todas las soluciones los puede encontrar en [``solucion.js``](solucion.js)
 
