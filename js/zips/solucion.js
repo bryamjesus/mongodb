@@ -1,5 +1,3 @@
-
-
 // Obtener una lista que muestre la cantidad total 
 // de la población por estado
 db.zips.aggregate([
@@ -128,6 +126,20 @@ db.zips.aggregate([
 
 // Obtener una lista que muestre el promedio
 // de habitantes por ciudad en cada estado.
+db.zips.aggregate([
+  {
+    $group: {
+      _id: { state: "$state", city: "$city" },
+      popSum: { $sum: "$pop" }
+    }
+  },
+  { $group: { _id: "$_id.state", avgCityPop: { $avg: "$popSum" } } }
+])
+
+/*
+SELECT state, city, AVG(SUM(pop)) AS avgCityPop 
+FROM zips GroupBy state, city
+*/
 
 
 
